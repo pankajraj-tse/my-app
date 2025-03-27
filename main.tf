@@ -5,6 +5,13 @@ terraform {
       version = "~> 5.0"
     }
   }
+  backend "remote" {
+    hostname = "app.terraform.io"
+    organization = "practice_for_exam"
+    workspaces {
+      name = "my-app"
+    }
+  }
 
 }
 
