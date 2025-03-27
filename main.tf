@@ -5,7 +5,9 @@ terraform {
       version = "~> 5.0"
     }
   }
+
 }
+
 
 # Configure the AWS Provider
 provider "aws" {
@@ -20,7 +22,7 @@ locals {
 }   
 
 # Create a VPC
-resource "aws_vpc" "exmapl_vc" {
+resource "aws_vpc" "exmasl_vc" {
   cidr_block = "10.0.0.0/16"
 
 }
