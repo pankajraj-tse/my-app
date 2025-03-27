@@ -34,9 +34,14 @@ resource "aws_vpc" "exmasl_vc" {
 
 }
 
+random_pet "example" {
+  length    = 4
+  separator = "-"
+}
+
 resource "aws_s3_bucket" "example_bucket" {
-  bucket = "example-bucket"
-  acl    = "private"
+  bucket = "example-bucket-${random_pet.example.id}"
+
  
 
   tags = local.tags
