@@ -13,6 +13,12 @@ provider "aws" {
 
 }
 
+locals {
+  tags = {
+    Name = "example"
+  }
+}   
+
 # Create a VPC
 resource "aws_vpc" "exmapl_vc" {
   cidr_block = "10.0.0.0/16"
