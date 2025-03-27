@@ -13,7 +13,7 @@ crash.log
 # version control.
 #
 # example.tfvars
-
+.terraform/providers/registry.terraform.io/hashicorp/aws/5.92.0/darwin_arm64/terraform-provider-aws_v5.92.0_x5
 # Ignore override files as they are usually used to override resources locally and so
 # are not checked in
 override.tf
