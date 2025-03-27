@@ -37,7 +37,7 @@ resource "aws_vpc" "exmasl_vc" {
 resource "aws_s3_bucket" "example_bucket" {
   bucket = "example-bucket"
   acl    = "private"
-  region = "us-east-1"
+ 
 
   tags = local.tags
 }
